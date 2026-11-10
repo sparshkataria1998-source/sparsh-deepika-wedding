@@ -1,20 +1,20 @@
 /* Sparsh ❤ Deepika— simplistic elegant Indian wedding theme */
 
 :root {
-  --cream: #fffaf2;
-  --ivory: #fdf6ea;
+  --cream: #fff7f4;
+  --ivory: #fdeeea;
   --card: #ffffff;
-  --maroon: #7b1e2b;
-  --maroon-deep: #5c1420;
-  --gold: #c9a24b;
-  --gold-light: #e8d5a3;
-  --ink: #2b2320;
-  --muted: #7d6f66;
-  --line: #ede0c8;
+  --rose: #a63d5c;
+  --rose-deep: #7f2a43;
+  --rosegold: #a85d67;
+  --rosegold-light: #edd0cb;
+  --ink: #372a2e;
+  --muted: #7f6a70;
+  --line: #f3ddd9;
   --haldi: #f6b800;
-  --sangeet: #7b1e2b;
-  --wedding: #1f4d3a;
-  --shadow: 0 20px 50px rgba(123, 30, 43, 0.1);
+  --sangeet: #a63d5c;
+  --wedding: #7f2a43;
+  --shadow: 0 20px 50px rgba(166, 61, 92, 0.12);
   --radius: 20px;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'Jost', system-ui, sans-serif;
@@ -39,9 +39,9 @@ body {
 /* subtle paisley / texture */
 .page {
   background:
-    radial-gradient(circle at 10% 10%, rgba(201,162,75,0.12), transparent 30%),
-    radial-gradient(circle at 90% 15%, rgba(123,30,43,0.08), transparent 32%),
-    radial-gradient(circle at 50% 100%, rgba(201,162,75,0.1), transparent 40%),
+    radial-gradient(circle at 10% 10%, rgba(183,110,121,0.12), transparent 30%),
+    radial-gradient(circle at 90% 15%, rgba(166,61,92,0.08), transparent 32%),
+    radial-gradient(circle at 50% 100%, rgba(183,110,121,0.1), transparent 40%),
     var(--cream);
 }
 
@@ -52,7 +52,7 @@ body {
   z-index: 20;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  background: rgba(255, 250, 242, 0.88);
+  background: rgba(255, 247, 244, 0.88);
   border-bottom: 1px solid var(--line);
 }
 .nav-inner {
@@ -67,11 +67,11 @@ body {
   font-family: var(--serif);
   font-weight: 700;
   letter-spacing: 0.06em;
-  color: var(--maroon);
+  color: var(--rose);
   font-size: 26px;
   text-decoration: none;
 }
-.brand span { color: var(--gold); }
+.brand span { color: var(--rosegold); }
 .nav-links {
   display: flex;
   align-items: center;
@@ -84,20 +84,20 @@ body {
   color: var(--muted);
   text-decoration: none;
 }
-.nav-links a:hover { color: var(--maroon); }
+.nav-links a:hover { color: var(--rose); }
 .nav-cta {
-  border: 1px solid var(--maroon);
-  color: var(--maroon) !important;
+  border: 1px solid var(--rose);
+  color: var(--rose) !important;
   padding: 8px 16px;
   border-radius: 999px;
 }
-.nav-cta:hover { background: var(--maroon); color: #fff !important; }
+.nav-cta:hover { background: var(--rose); color: #fff !important; }
 .menu-btn {
   display: none;
   background: none;
   border: 1px solid var(--line);
   border-radius: 10px;
-  color: var(--maroon);
+  color: var(--rose);
   font-size: 22px;
   line-height: 1;
   width: 44px;
@@ -107,7 +107,7 @@ body {
 .mobile-menu {
   display: none;
   border-top: 1px solid var(--line);
-  background: rgba(255, 250, 242, 0.97);
+  background: rgba(255, 247, 244, 0.97);
   padding: 8px 20px 16px;
 }
 .mobile-menu a {
@@ -124,7 +124,7 @@ body {
 .mobile-menu a.nav-cta {
   text-align: center;
   margin-top: 10px;
-  border: 1px solid var(--maroon);
+  border: 1px solid var(--rose);
   border-radius: 999px;
 }
 @media (max-width: 760px) {
@@ -142,7 +142,7 @@ body {
 }
 .shloka {
   font-family: 'Tiro Devanagari Hindi', serif;
-  color: var(--gold);
+  color: var(--rosegold);
   font-size: 20px;
   letter-spacing: 0.02em;
 }
@@ -154,7 +154,7 @@ body {
 }
 .shloka-full {
   font-family: 'Tiro Devanagari Hindi', serif;
-  color: var(--maroon-deep);
+  color: var(--rose-deep);
   font-size: 14px;
   line-height: 1.35;
 }
@@ -170,13 +170,13 @@ body {
   font-size: clamp(52px, 9vw, 108px);
   line-height: 0.95;
   margin: 18px 0 8px;
-  color: var(--maroon-deep);
+  color: var(--rose-deep);
   font-weight: 600;
 }
 .couple-names .amp {
   font-style: italic;
   font-weight: 400;
-  color: var(--gold);
+  color: var(--rosegold);
   font-size: 0.7em;
   display: block;
   margin: 4px 0;
@@ -198,13 +198,13 @@ body {
   justify-content: center;
   gap: 12px;
   margin: 26px auto;
-  color: var(--gold);
+  color: var(--rosegold);
 }
 .divider::before, .divider::after {
   content: '';
   height: 1px;
   width: 120px;
-  background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+  background: linear-gradient(to right, transparent, var(--rosegold-light), transparent);
   display: block;
 }
 .hero-card {
@@ -222,7 +222,7 @@ body {
   content: '';
   position: absolute;
   inset: 8px;
-  border: 1px solid var(--gold-light);
+  border: 1px solid var(--rosegold-light);
   border-radius: 14px;
   pointer-events: none;
 }
@@ -248,15 +248,15 @@ body {
   transition: 0.2s;
 }
 .btn-primary {
-  background: var(--maroon);
+  background: var(--rose);
   color: #fff;
-  border: 1px solid var(--maroon);
+  border: 1px solid var(--rose);
 }
-.btn-primary:hover { background: var(--maroon-deep); }
+.btn-primary:hover { background: var(--rose-deep); }
 .btn-ghost {
   background: transparent;
-  color: var(--maroon);
-  border: 1px solid var(--gold);
+  color: var(--rose);
+  border: 1px solid var(--rosegold);
 }
 .btn-ghost:hover { background: #fff; }
 
@@ -278,7 +278,7 @@ body {
   font-family: var(--serif);
   font-size: 32px;
   display: block;
-  color: var(--maroon-deep);
+  color: var(--rose-deep);
   line-height: 1;
 }
 .count-box small {
@@ -299,14 +299,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.28em;
   font-size: 12px;
-  color: var(--gold);
+  color: var(--rosegold);
 }
 .h2 {
   font-family: var(--serif);
   text-align: center;
   font-size: clamp(32px, 5vw, 52px);
   margin: 8px 0 10px;
-  color: var(--maroon-deep);
+  color: var(--rose-deep);
   line-height: 1.05;
 }
 .sub {
@@ -343,8 +343,8 @@ body {
   font-size: 36px;
   color: #fff;
 }
-.monogram.groom { background: linear-gradient(135deg, #7b1e2b, #b44a5a); }
-.monogram.bride { background: linear-gradient(135deg, #1f4d3a, #5a9a7a); }
+.monogram.groom { background: linear-gradient(135deg, #7f2a43, #c26a83); }
+.monogram.bride { background: linear-gradient(135deg, #a85d67, #dfa9a3); }
 .person h3 {
   font-family: var(--serif);
   font-size: 34px;
@@ -355,7 +355,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-size: 12px;
-  color: var(--gold);
+  color: var(--rosegold);
   margin: 6px 0 10px;
 }
 .person p { color: var(--muted); margin: 0; }
@@ -414,16 +414,16 @@ body {
 .func-body strong { color: var(--ink); }
 .func-accent { height: 6px; }
 .func-accent.haldi { background: linear-gradient(to right, #f6b800, #ffdf6b); }
-.func-accent.sangeet { background: linear-gradient(to right, #7b1e2b, #e8a0ac); }
-.func-accent.wedding { background: linear-gradient(to right, #1f4d3a, #c9a24b); }
+.func-accent.sangeet { background: linear-gradient(to right, #a63d5c, #e8a0ac); }
+.func-accent.wedding { background: linear-gradient(to right, #7f2a43, #d9a79b); }
 
 /* Venue */
 .venue {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 18px;
-  background: var(--maroon-deep);
-  color: #f9ead0;
+  background: var(--rose-deep);
+  color: #fbeae6;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -436,7 +436,7 @@ body {
   margin: 6px 0 10px;
   line-height: 1.05;
 }
-.venue-left p { color: #d9c4a6; }
+.venue-left p { color: #e6c9c4; }
 .venue-meta {
   margin: 18px 0;
   display: grid;
@@ -446,8 +446,8 @@ body {
 .venue-right {
   background:
     radial-gradient(circle at 30% 20%, rgba(255,255,255,0.18), transparent 40%),
-    linear-gradient(160deg, #fff6e3 0%, #f3dba6 45%, #d9ad5d 100%);
-  color: var(--maroon-deep);
+    linear-gradient(160deg, #fff5f2 0%, #f3d3cc 45%, #d9a29a 100%);
+  color: var(--rose-deep);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -457,10 +457,10 @@ body {
   background: rgba(255,255,255,0.92);
   border-radius: 16px;
   padding: 20px;
-  border: 1px solid rgba(123,30,43,0.15);
+  border: 1px solid rgba(166,61,92,0.15);
 }
 .map-card h4 { font-family: var(--serif); margin: 0 0 6px; font-size: 22px; }
-.map-card p { margin: 0 0 12px; color: #6b5a4a; font-size: 14px; }
+.map-card p { margin: 0 0 12px; color: #7c5f66; font-size: 14px; }
 
 /* RSVP */
 .rsvp {
@@ -477,8 +477,8 @@ body {
 /* Footer */
 footer {
   margin-top: 56px;
-  background: var(--maroon-deep);
-  color: #e9d6ae;
+  background: var(--rose-deep);
+  color: #f0d2cc;
   text-align: center;
   padding: 44px 20px 28px;
 }
@@ -490,19 +490,19 @@ footer .foot-names {
 footer .hash {
   display: inline-block;
   margin-top: 10px;
-  border: 1px solid rgba(233,214,174,0.4);
+  border: 1px solid rgba(240,210,204,0.4);
   padding: 6px 16px;
   border-radius: 999px;
   letter-spacing: 0.12em;
   font-size: 13px;
 }
-footer small { display: block; margin-top: 14px; color: #c2a97f; }
+footer small { display: block; margin-top: 14px; color: #d9b1ab; }
 
 /* Family additions */
 .family-line {
   font-family: var(--serif);
   font-size: clamp(22px, 3.5vw, 32px);
-  color: var(--maroon);
+  color: var(--rose);
   letter-spacing: 0.04em;
   margin-top: 4px;
 }
@@ -510,8 +510,8 @@ footer small { display: block; margin-top: 14px; color: #c2a97f; }
   width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: 14px;
-  border: 1.5px dashed var(--gold);
-  background: linear-gradient(180deg, #fffdf6, var(--ivory));
+  border: 1.5px dashed var(--rosegold);
+  background: linear-gradient(180deg, #fff9f7, var(--ivory));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,7 +519,7 @@ footer small { display: block; margin-top: 14px; color: #c2a97f; }
   gap: 6px;
   font-family: var(--serif);
   font-size: 42px;
-  color: var(--maroon);
+  color: var(--rose);
   margin-bottom: 14px;
 }
 .photo-placeholder small {
@@ -602,8 +602,8 @@ footer small { display: block; margin-top: 14px; color: #c2a97f; }
   height: 44px;
   border-radius: 50%;
   border: 1px solid var(--line);
-  background: rgba(255, 250, 242, 0.9);
-  color: var(--maroon);
+  background: rgba(255, 247, 244, 0.9);
+  color: var(--rose);
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
@@ -616,8 +616,8 @@ footer small { display: block; margin-top: 14px; color: #c2a97f; }
   height: 12px;
   border-radius: 50%;
   border: none;
-  background: #d9c8a6;
+  background: #e3c0bb;
   cursor: pointer;
   padding: 0;
 }
-.carousel-dot.active { background: var(--gold); }
+.carousel-dot.active { background: var(--rosegold); }

@@ -1,10 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
-import carousel1 from './assets/carousel-1.jpg'
+import carousel1 from './assets/carousel-1.png'
 import carousel2 from './assets/carousel-2.jpg'
 import carousel3 from './assets/carousel-3.jpg'
 import carousel4 from './assets/carousel-4.jpg'
-import carousel5 from './assets/carousel-5.jpg'
 import ganeshaIdol from './assets/ganesha-idol-2.png'
 
 const WEDDING_DATE = new Date('2026-12-12T19:30:00+05:30')
@@ -14,7 +13,7 @@ const VENUE = 'Grand Mirage (Tulip)'
 const HALDI_MAPS_URL = 'https://maps.app.goo.gl/5FbLYoHJrTfuEU3M8'
 const WEDDING_MAPS_URL = 'https://maps.app.goo.gl/UmGphGe8GpvjtYVn7'
 // Add your new Google Form URL here when it is ready.
-const GOOGLE_FORM_PAGE = ''
+const GOOGLE_FORM_PAGE = 'https://forms.gle/VTq7S1mSz3zfrYAk9'
 
 function useCountdown(target) {
   const [now, setNow] = useState(() => new Date())
@@ -161,7 +160,6 @@ const COUPLE_PHOTOS = [
   { src: carousel2, alt: 'Deepika and Sparsh celebrating together' },
   { src: carousel3, alt: 'Deepika and Sparsh sharing a moment' },
   { src: carousel4, alt: 'Deepika and Sparsh holding hands' },
-  { src: carousel5, alt: 'Deepika and Sparsh together' },
 ]
 
 function CoupleCarousel() {
@@ -268,7 +266,7 @@ function Venue() {
       <p className="sub">We look forward to welcoming you to celebrate these special moments with us.</p>
       <div className="venue">
         <div className="venue-left">
-          <div className="eyebrow" style={{ textAlign: 'left', color: '#c9a24b' }}>Grand Mirage (Tulip)</div>
+          <div className="eyebrow" style={{ textAlign: 'left', color: '#a85d67' }}>Grand Mirage (Tulip)</div>
           <h3>Our Wedding Celebrations</h3>
           <p>Join us at Grand Mirage (Tulip) as Deepika & Sparsh begin their forever.</p>
           <div className="venue-meta">
@@ -300,11 +298,11 @@ function Rsvp() {
     <section className="section" id="rsvp">
       <div className="eyebrow">RSVP</div>
       <h2 className="h2">Will you join us?</h2>
-      <p className="sub">Please let us know if you can join us. RSVP details will be shared soon.</p>
+      <p className="sub">Please let us know if you can join us by filling out the RSVP form.</p>
       <div className="rsvp">
         <div style={{ fontSize: 40 }}>💛</div>
         <p style={{ color: 'var(--muted)', margin: '10px 0 20px' }}>
-          The RSVP form link will be shared soon. We look forward to hearing from you!
+          Kindly confirm your presence. We look forward to celebrating with you!
         </p>
         {GOOGLE_FORM_PAGE ? (
           <a className="btn btn-primary" href={GOOGLE_FORM_PAGE} target="_blank" rel="noreferrer" style={{ width: '100%' }}>
@@ -329,7 +327,7 @@ export default function App() {
       <Venue />
       <Rsvp />
       <footer>
-        <div className="shloka" style={{ color: '#c9a24b' }}>॥ शुभ विवाह ॥</div>
+        <div className="shloka" style={{ color: '#fff' }}>॥ शुभ विवाह ॥</div>
         <div className="foot-names">Deepika ❤ Sparsh</div>
         <div>11th & 12th December 2026 • {VENUE}</div>
         <span className="hash">Deepika & Sparsh</span>
