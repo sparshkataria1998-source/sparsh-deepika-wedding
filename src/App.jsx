@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
-import carousel1 from './assets/carousel-1.png'
-import carousel2 from './assets/carousel-2.jpg'
-import carousel3 from './assets/carousel-3.jpg'
-import carousel4 from './assets/carousel-4.jpg'
+import carousel1 from './assets/1.jpeg'
+import carousel2 from './assets/2.jpeg'
+import carousel3 from './assets/3.png'
+import carousel4 from './assets/4.jpeg'
+import carousel5 from './assets/5.png'
 import ganeshaIdol from './assets/ganesha-idol-2.png'
 
 const WEDDING_DATE = new Date('2026-12-12T19:30:00+05:30')
@@ -156,10 +157,11 @@ function Family() {
 }
 
 const COUPLE_PHOTOS = [
-  { src: carousel1, alt: 'Deepika and Sparsh together' },
-  { src: carousel2, alt: 'Deepika and Sparsh celebrating together' },
-  { src: carousel3, alt: 'Deepika and Sparsh sharing a moment' },
-  { src: carousel4, alt: 'Deepika and Sparsh holding hands' },
+  { src: carousel1, alt: 'Deepika and Sparsh with flowers' },
+  { src: carousel2, alt: 'Deepika and Sparsh sharing a moment' },
+  { src: carousel3, alt: 'Deepika and Sparsh sitting together' },
+  { src: carousel4, alt: 'Deepika and Sparsh having a moment together' },
+  { src: carousel5, alt: 'Deepika and Sparsh mirror Picture' },
 ]
 
 function CoupleCarousel() {
