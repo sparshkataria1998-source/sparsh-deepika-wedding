@@ -10,10 +10,10 @@ const WEDDING_DATE = new Date('2026-12-12T19:30:00+05:30')
 const BRIDE_NAME = 'Deepika'
 const GROOM_NAME = 'Sparsh'
 const VENUE = 'Grand Mirage (Tulip)'
-const HALDI_MAPS_URL = 'https://maps.app.goo.gl/5FbLYoHJrTfuEU3M8'
+const HALDI_MAPS_URL = 'https://maps.app.goo.gl/5t9fPZxm5iF3CjV36'
 const WEDDING_MAPS_URL = 'https://maps.app.goo.gl/UmGphGe8GpvjtYVn7'
 // Add your new Google Form URL here when it is ready.
-const GOOGLE_FORM_PAGE = 'https://forms.gle/VTq7S1mSz3zfrYAk9'
+const GOOGLE_FORM_PAGE = 'https://forms.gle/oXACoGox4Nw7CbTe7'
 
 function useCountdown(target) {
   const [now, setNow] = useState(() => new Date())
